@@ -1,7 +1,7 @@
 # Terminal Homework 1
 ## Linux terminal (GitBash) commands
 
-#### 1. Посмотреть где я
+1. Посмотреть где я
 ```
 $ pwd
 ```
@@ -87,4 +87,30 @@ $ less t3.txt
 $ date
 or
 $ date +%D
+```
+21. Отправить http запрос на сервер.
+```
+$ curl http://162.55.220.72:5005/terminal-hw-request
+```
+22. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+```
+$ touch script.sh
+$ nano script.sh
+```
+вставляем в файл:
+```
+mkdir script
+cd script
+mkdir s1 s2 s3
+cd s1
+touch t1.txt t2.txt t3.txt j1.json j2.json
+mkdir f1 f2 f3
+ls -la
+mv t1.txt f1/
+mv t2.txt f1/
+```
+нажимаем Ctrl+X, Y, Enter для сохранения файла. Далее
+```
+$ chmod +x script.sh
+$ ./script.sh"
 ```
