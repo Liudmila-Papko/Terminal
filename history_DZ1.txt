@@ -25,4 +25,4 @@
    25  nano script.sh
    26  chmod +x script.sh
    27  ./script.sh
-   28  history > DZ_1_Terminal.txt
+   28  history > history_DZ1.txt
