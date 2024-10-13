@@ -1,0 +1,28 @@
+    1  clear
+    2  pwd
+    3  mkdir folder1
+    4  cd folder1
+    5  mkdir f1 f2 f3
+    6  cd f1
+    7  touch t1.txt t2.txt t3.txt j1.json j2.json
+    8  mkdir s1 s2 s3
+    9  ls -la
+   10  vim t1.txt
+   11  cd ..
+   12  cd f1
+   13  mv t1.txt t2.txt s1/ 
+   14  cp j1.json j2.json s1/
+   15  find -name t3.txt
+   16  head -n 5 t1.txt
+   17  cd s1
+   18  head -n 5 t1.txt
+   19  tail -n 5 t1.txt
+   20  tail -f t1.txt | grep error
+   21  less t1.txt
+   22  date
+   23  curl http://162.55.220.72:5005/terminal-hw-request
+   24  touch script.sh
+   25  nano script.sh
+   26  chmod +x script.sh
+   27  ./script.sh
+   28  history > DZ_1_Terminal.txt

@@ -1,0 +1,46 @@
+    1  mkdir dir_1
+    2  cd dir_1/
+    3  mkdir inner_dir_1
+    4  pwd
+    5  ls
+    6  touch tf_1.txt
+    7  cat > tf_2.txt
+    8  cd inner_dir_1/
+    9  cat > tf_3.txt
+   10  cat >> tf_3.txt
+   11  for i in {1..15}; do echo "line $1"; done > tf_4.txt
+   12  for i in {1..13}; do echo "line $1"; done > tf_5.txt
+   13  ls -la
+   14  cd ..
+   15  cat ./inner_dir_1/tf_3.txt
+   16  find -name tf_4.txt
+   17  > tf_4.txt
+   18  find -name "tf*".txt
+   19  find -iname "tf*".txt
+   20  grep sec *.txt
+   21  grep -i sec *.txt
+   22  grep -w sec *.txt
+   23  cat >> tf_2.txt
+   24  grep -w sec *.txt
+   25  cat >> tf_2.txt
+   26  grep -w sec *.txt
+   27  grep -w -i sec *.txt
+   28  grep second *
+   29  grep -i second *
+   30  grep -r second */
+   31  grep -l second * | xargs realpath
+   32  grep -v -r second *
+   33  grep -l -v second *
+   34  tail -n 4 tf_2.txt
+   35  head -n 4 tf_2.txt
+   36  mkdir new_folder2 ; cat > new_folder2/new_file.txt
+   37  ls
+   38  grep -l sec * | xargs -I {} mv {} inner_dir_1
+   39  cat >> tf_1.txt
+   40  grep -l sec * | xargs -I {} cp {} inner_dir_1
+   41  grep -r -h sec . | cat > sec.txt
+   42  cat sec.txt
+   43  grep -l -w sec * | xargs rm
+   44  ls
+   45  echo 'Good job!!'
+   46  history > DZ_2_Terminal.txt
